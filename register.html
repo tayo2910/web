@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register/Log in</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Register</h1>
+        </header>
+        <form>
+            <div>
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="" required>
+                <br>
+            
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="" required>
+                <br>
+                
+                <button onclick="login()" type="button" class="btn btn-dark">Submit</button>
+
+                <label>
+                    <input type="checkbox" checked="" name="remember"> Remember me
+                </label>
+
+            </div>
+            <hr>
+    
+            <div>
+                <p<a href="home.html">Forgot password?</a></p>
+            </div>
+        </form>
+        <footer>
+            <marquee><p>&copy;2024 Angelica Hairs. All rights reserved.</p></marquee>
+        </footer>
+        <script>
+            function login() {
+                alert("Welcome Superstar!")
+            }
+        </script>
+       
+    </body>
+</html>

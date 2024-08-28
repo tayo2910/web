@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <h1> Calculate your Hair Price</h1> 
+    </header>
+    <div id="calc">
+        <div id="content">
+           <form>
+              <div id="output">
+                 <input type="text" id='res'>
+              </div>
+              <div class="btn">
+                 <input type="button" value='C' onclick="Clear()" id="clear">
+                 <input type="button" value='←' onclick="Back()" id="backspace">
+                 <input type="button" value='%' onclick="Solve('%')">
+                 <input type="button" value='/' onclick="Solve('/')">
+                 <br>
+                 <input type="button" value='7' onclick="Solve('7')">
+                 <input type="button" value='8' onclick="Solve('8')">
+                 <input type="button" value='9' onclick="Solve('9')">
+                 <input type="button" value='x' onclick="Solve('*')">
+                 <br>
+                 <input type="button" value='4' onclick="Solve('4')">
+                 <input type="button" value='5' onclick="Solve('5')">
+                 <input type="button" value='6' onclick="Solve('6')">
+                 <input type="button" value='-' onclick="Solve('-')">
+                 <br>
+                 <input type="button" value='1' onclick="Solve('1')">
+                 <input type="button" value='2' onclick="Solve('2')">
+                 <input type="button" value='3' onclick="Solve('3')">
+                 <input type="button" value='+' onclick="Solve('+')">
+                 <br>
+                 <input type="button" value='00' onclick="Solve('00')">
+                 <input type="button" value='0' onclick="Solve('0')">
+                 <input type="button" value='.' onclick="Solve('.')">
+                 <input type="button" value='=' onclick="Result()">
+              </div>
+           </form>
+        </div>
+     </div>
+     <script src='index.js'></script>
+    <style>  
+ 
+  
+#clear{  
+width: 270px;  
+border: 3px solid gray;  
+border-radius: 3px;  
+padding: 20px;  
+background-color: rgba(67, 1, 56, 0.292);  
+}  
+  
+.formstyle  
+{  
+width: 300px;  
+height: 430px;  
+margin: auto;  
+border: 3px solid rgb(59, 2, 63);  
+border-radius: 5px;  
+padding: 10px;  
+}  
+  
+  
+  
+input  
+{  
+width: 20px;  
+background-color: rgb(67, 0, 64);  
+color: white;  
+border: 3px solid gray;  
+    border-radius: 5px;  
+    padding: 20px;  
+    margin: 5px;  
+    font-size: 15px;  
+}  
+  
+  
+#calc{  
+width: 250px;  
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#calc {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#content {
+    background: #2c302c;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+#content form input {
+    border: 0;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+#backspace {
+    background-color: rgb(237, 89, 30);
+    color: white;
+}
+#res {
+    padding: 10px;
+}
+#clear {
+    background-color: rgb(237, 30, 209);
+    color: white;
+}
+form #output {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+form #output input {
+    text-align: right;
+    flex: 1;
+    font-size: 25px;
+}
+  
+</style>     
+ 
+
+
+
+    <footer>
+        <p>&copy; 2024 Angelica Hairs. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
